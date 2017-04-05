@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <!--  common  -->
+    <string name="app_name">短信闹钟</string>
+  	<string name="editStr">编辑</string>
+  	<string name="cancle">取消</string>
+  	<string name="yes">是</string>
+  	<string name="no">否</string>
+  	<string name="app_en_name">SmsAlarm</string>
+  	<string name="sharedPreference_delete">delete_choose</string>
+  	<string name="in_use">启用</string>
+  	<string name="no_use">禁用</string>
+  	<string name="save">保存</string>
+  	<string name="save_success">保存成功</string>
+  	<string name="save_failure">保存失败</string>
+  	<string name="search">搜索</string>
+  	
+  	<!-- color -->
+  	<color name="blue">#ff33b5e5</color>
+  	<color name="green">#7cfc00</color>
+  	<color name="white">#FFFFFF</color>
+  	<color name="gray">#BEBEBE</color>
+  	<color name="red">#FB0606</color>
+  	<color name="title_gray">#FAFAFA</color>
+  	<color name="bottom_gray">#FAFAFA</color>
+  	<color name="black">#000000</color>
+  	
+  	<!-- tab -->
+  	<string name="tab_clock">闹钟</string>
+  	<string name="tab_intercepter">拦截</string>
+  	
+  	<!-- function -->
+  	<string name="action_settings">设置</string>
+  	<string name="intercept">拦截</string>
+  	<string name="delete">删除</string>
+  	<string name="deleteAll">删除所有</string>
+  	
+  	<!-- add -->
+  	<string name="add_intercepter">新增【拦截】</string>
+  	<string name="add_clock">新增【闹钟】</string>
+  	<string name="add_phone_text">手机号：</string>
+ 	<string name="add_keyword_text">关键字：</string>
+ 	<string name="add">添加</string>
+ 	<string name="add_cancel">取消</string>
+ 	<string name="add_success">添加成功</string>
+ 	<string name="add_failure">添加失败</string>
+ 	<string name="add_all_number">**所有号码**</string>
+ 	<string name="add_all_keyword">**不过滤关键字**</string>
+  	
+  	<!-- edit -->
+  	<string name="edit_intercepter">修改【拦截】</string>
+  	<string name="edit_clock">修改【闹钟】</string>
+  	
+  	<!-- tips -->
+  	<string name="tip_not_null">请填写其中一项</string>
+  	<string name="tip_exist">关键字已经存在!</string>
+  	<string name="tip_oclock">所有号码</string>
+  	<string name="tip_key">关键字,为空则默认所有,多个用逗号间隔</string>
+  	<string name="tip_phone">手机号,为空则默认所有</string>
+  	<string name="tip_delete_all">确认删除全部记录</string>
+  	<string name="tip_delete_start">确认删除</string>
+  	<string name="tip_delete_end">条记录</string>
+  	<string name="sd_card_not_found">未找到SD卡或无读写权限</string>
+  	<string name="backup_tip">备份</string>
+  	<string name="restore_tip">恢复</string>
+  	<string name="tip_backup_success">备份成功</string>
+  	<string name="tip_last_update">最后更新时间：</string>
+  	
+  	<!-- setting -->
+  	<string name="setting_title">设置</string>
+  	<string name="setting_oclock_use">启用闹钟</string>
+  	<string name="setting_intercepter_use">启用拦截</string>
+  	<string name="setting_disturbing_interval">失效时段</string>
+  	<string name="setting_tip_not_use">未设置</string>
+  	<string name="setting_backup_restore">数据备份/恢复</string>
+  	<string name="setting_backup">数据备份</string>
+  	<string name="setting_restore">数据恢复中......</string>
+  	<string name="setting_no_backup">未备份</string>
+  	<string name="setting_choose_ring">选择铃声</string>
+  	<string name="setting_ring_default">公鸡打鸣曲.mp3</string>
+  	<string name="setting_switch_on">启用</string>
+  	<string name="setting_switch_off">停用</string>
+  	<string name="setting_initialize">数据初始化</string>
+  	<string name="setting_is_initialize">是否初始化</string>
+  	<string name="setting_initialize_history">是否清空历史记录</string>
+  	<string name="setting_back">&lt;</string>
+  	<string name="setting_choose_ring_success">已选择</string>
+  	<string name="setting_choose_ring_not_null">不允许静音</string>
+  	<string name="setting_choose_audio_default">默认</string>
+  	<string name="setting_choose_audio_ring">选择系统铃声</string>
+  	<string name="setting_intercepter_ring">拦截提示音</string>
+  	<string name="setting_alarm_use_detail">闹钟设置</string>
+  	<string name="setting_intercepter_use_detail">拦截设置</string>
+  	<string name="setting_not_disturb">失效时间</string>
+  	<string name="workday">工作日</string>
+  	<string name="weekend">周末</string>
+  	<string name="start_interval">开始时段：</string>
+  	<string name="end_interval">结束时段：</string>
+  	<string name="every_day">每天</string>
+  	<string name="custom">自定义</string>
+  	<string name="setting_period_listen">周期短信监听</string>
+  	
+  	<!-- history -->
+  	<string name="history_alarm">闹钟历史</string>
+  	<string name="history_intecept">拦截历史</string>
+  	<string name="history_alarm_count">已闹铃</string>
+  	<string name="history_intecept_count">已拦截</string>
+  		
+  	<!-- soft update -->
+  	<string name="soft_update_yes">发现新版本！！！</string>
+  	<string name="soft_update_no">已经是最新版本</string>
+    <string name="soft_update_title">检测到新版本</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <string name="soft_update_later">稍后更新</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_cancel">取消</string>
+    
+    <!-- BOMC MODE -->
+    <string name="bomc_open_mode_name">信春哥</string>
+    <string name="bomc_close_mode_name">不信春哥</string>
+	<string name="bomc_mode_num">10086</string>
+	<string name="bomc_open_tip">您已开启BOMC模式！</string>
+	<string name="bomc_close_tip">您已关闭BOMC模式！</string>
+	
+	<!-- week -->
+	<string name="monday">周一</string>
+	<string name="tuesday">周二</string>
+	<string name="wednesday">周三</string>
+	<string name="thursday">周四</string>
+	<string name="friday">周五</string>
+	<string name="saturday">周六</string>
+	<string name="sunday">周日</string>
+	
+	<!-- periodlisten -->
+	<string name="periodlisten_number">号码：</string>
+</resources>

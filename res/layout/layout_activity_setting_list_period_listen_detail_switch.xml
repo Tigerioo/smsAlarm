@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <LinearLayout 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+        
+         <TextView 
+                android:id="@+id/setting_list_period_listen_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+        
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            
+            <TextView 
+                android:id="@+id/setting_list_period_listen_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/gray"
+                android:textSize="12sp"/>
+            
+            <TextView 
+                android:id="@+id/setting_list_period_listen_lastRcvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+	            android:layout_marginRight="5dip"
+	            android:textColor="@color/gray"
+                android:textSize="12sp"/>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            <TextView 
+                android:id="@+id/setting_list_period_listen_keyword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000000"/>
+            
+            <Switch 
+                android:id="@+id/setting_list_period_listen_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+	            android:layout_marginRight="5dip"
+	            android:focusable="false"
+	            android:textOff="@string/setting_switch_off"
+	            android:textOn="@string/setting_switch_on" />
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    
+    <EditText
+        android:id="@+id/keyEdit"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:hint="@string/tip_key"/>
+    <EditText
+        android:id="@+id/phoneEdit"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="16dp"
+       	android:hint="@string/tip_phone"/>
+    <!--  
+    <RelativeLayout
+  	 android:layout_width="wrap_content"
+  	 android:layout_height="wrap_content" >
+  	 	<Button 
+  	 	    android:id="@+id/add_button_positive"
+  	 	    android:layout_width="wrap_content"
+  	 	    android:layout_height="wrap_content"/>
+  	 	<Button 
+  	 	    android:id="@+id/add_button_negative"
+  	 	    android:layout_width="wrap_content"
+  	 	    android:layout_height="wrap_content"/>
+  	 </RelativeLayout>
+    -->
+</LinearLayout>

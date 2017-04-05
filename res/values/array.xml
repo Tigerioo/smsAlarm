@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <string-array name="setting_array">
+        <item>@string/setting_period_listen</item>
+        <item>@string/setting_oclock_use</item>
+        <item>@string/setting_intercepter_use</item>
+        <item>@string/setting_intercepter_ring</item>
+        <item>@string/setting_choose_ring</item>
+        <item>@string/setting_disturbing_interval</item>
+		<item>@string/setting_backup_restore</item>
+        <item>@string/soft_update_title</item>
+        <item>@string/setting_initialize</item>
+    </string-array>
+    
+    <string-array name="bomc_alarm_keyword">
+        <item>上报被拦截</item>
+        <item>文件不存在</item>
+    </string-array>
+    
+    <string-array name="bomc_intecept_keyword">
+        <item>反馈正常</item>
+        <item>node001</item>
+        <item>node000目录RS反馈文件延时</item>
+        <item>正常区间</item>
+        <item>修正短信</item>
+        <item>探测指标</item>
+        <item>KPI完整</item>
+        <item>修正KPI</item>
+        <item>网络连接正常</item>
+        <item>事件总数统计</item>
+        <item>超时变更单</item>
+        <item>故障统计</item>
+        <item>业务中断时长</item>
+        <item>平均及时解决率</item>
+        <item>获取到作业</item>
+        <item>获取到任务</item>
+        <item>获取到知识</item>
+        <item>当前告警值</item>
+        <item>告警短信</item>
+        <item>安全管理接口</item>
+        <item>接口文件</item>
+        <item>最后提醒短信</item>
+        <item>记录完整接入</item>
+        <item>不考核</item>
+        <item>接口类型(4 A类型)</item>
+    </string-array>
+    
+</resources>

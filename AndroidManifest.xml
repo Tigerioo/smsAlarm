@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.superman.smsalarm"
+    android:versionCode="27"
+    android:versionName="2.4.6.8.10" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light">
+        <receiver android:name="com.superman.common.SMSreceiver">
+        	<intent-filter android:priority="2147483647">
+        		<action android:name="android.intent.action.BOOT_COMPLETED" />
+        		<category android:name="android.intent.category.HOME"/>
+        	</intent-filter>
+        </receiver>
+        
+        <service android:name="com.superman.common.SmsService" android:exported="false">
+           <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </service>
+        
+         <activity
+            android:name="com.superman.smsalarm.MainActivity"
+           android:label="@string/app_name" 
+           android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter >
+                <action android:name="com.superman.smsalarm.refresh"/> 
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.superman.smsalarm.MediaActivity">
+        </activity>
+        <activity
+            android:name="com.superman.smsalarm.ConsoleActivity">
+        </activity>
+         <activity
+            android:name="com.superman.smsalarm.setting.SettingActivity">
+        </activity>
+        <activity
+            android:name="com.superman.smsalarm.HistoryActivity">
+        </activity>
+        <activity 
+            android:name="com.superman.smsalarm.setting.SettingDetailActivity">
+        </activity>
+        <activity 
+            android:name="com.superman.smsalarm.DisturbActivity">
+        </activity>
+        <activity 
+            android:name="com.superman.smsalarm.SearchActivity" 
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+         <activity 
+            android:name="com.superman.smsalarm.periodlisten.PeriodListenActivity" >
+        </activity>
+         <activity 
+            android:name="com.superman.smsalarm.periodlisten.Add" 
+			android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <service android:name="com.superman.common.TimeTickService"/>
+    </application>
+    
+</manifest>
